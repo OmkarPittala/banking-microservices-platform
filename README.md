@@ -38,6 +38,7 @@ flowchart LR
     Config --> Account
     Config --> Transaction
     Config --> Notification
+```
 
 Services included:
 
