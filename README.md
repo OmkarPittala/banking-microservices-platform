@@ -15,8 +15,29 @@ This project simulates a modern banking ecosystem supporting:
 * Authentication & Authorization
 
 The platform is designed using domain-driven microservices and follows enterprise architecture patterns commonly used in large-scale banking environments.
+## System Architecture
 
-## Architecture
+```mermaid
+flowchart LR
+    Client[Web / Mobile Client] --> Gateway[API Gateway]
+
+    Gateway --> Customer[Customer Service]
+    Gateway --> Account[Account Service]
+    Gateway --> Transaction[Transaction Service]
+
+    Customer --> CustomerDB[(PostgreSQL)]
+    Account --> AccountDB[(PostgreSQL)]
+    Transaction --> TransactionDB[(PostgreSQL)]
+
+    Transaction --> Kafka[Apache Kafka]
+    Kafka --> Notification[Notification Service]
+    Notification --> MongoDB[(MongoDB)]
+
+    Gateway --> Auth[Spring Security / OAuth]
+    Config[Config Server] --> Customer
+    Config --> Account
+    Config --> Transaction
+    Config --> Notification
 
 Services included:
 
