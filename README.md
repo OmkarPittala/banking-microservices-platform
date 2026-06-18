@@ -1,4 +1,10 @@
 # Banking Microservices Platform
+![Java](https://img.shields.io/badge/Java-17+-orange?style=for-the-badge)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-Microservices-green?style=for-the-badge)
+![Kafka](https://img.shields.io/badge/Apache_Kafka-Event_Driven-black?style=for-the-badge)
+![Docker](https://img.shields.io/badge/Docker-Containerized-blue?style=for-the-badge)
+![AWS](https://img.shields.io/badge/AWS-Cloud_Native-yellow?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-In_Progress-success?style=for-the-badge)
 
 A cloud-native banking platform designed using modern microservices architecture principles. The system demonstrates how enterprise banking applications can be built using scalable, secure, and event-driven services.
 
@@ -96,6 +102,56 @@ Communication:
 * Role-based security
 * Distributed configuration
 * Service discovery
+## Project Roadmap
+
+### Phase 1 - Foundation
+
+* [x] Repository Structure
+* [x] Architecture Design
+* [ ] API Gateway Setup
+* [ ] Config Server Setup
+* [ ] Service Discovery
+
+### Phase 2 - Core Banking Services
+
+* [ ] Customer Service
+* [ ] Account Service
+* [ ] Transaction Service
+* [ ] Notification Service
+
+### Phase 3 - Event-Driven Architecture
+
+* [ ] Apache Kafka Integration
+* [ ] Event Publishing & Consumption
+* [ ] Transaction Notifications
+
+### Phase 4 - Security
+
+* [ ] Spring Security
+* [ ] JWT Authentication
+* [ ] Role-Based Access Control (RBAC)
+
+### Phase 5 - Data Layer
+
+* [ ] PostgreSQL Integration
+* [ ] MongoDB Integration
+* [ ] Redis Caching
+
+### Phase 6 - DevOps & Cloud
+
+* [ ] Docker Containerization
+* [ ] Docker Compose Setup
+* [ ] Kubernetes Deployment
+* [ ] CI/CD Pipeline
+* [ ] AWS Deployment
+
+### Phase 7 - Future Enhancements
+
+* [ ] AI-Powered Banking Assistant
+* [ ] Fraud Detection Module
+* [ ] Real-Time Analytics Dashboard
+* [ ] Open Banking APIs
+
 
 ## Future Enhancements
 
